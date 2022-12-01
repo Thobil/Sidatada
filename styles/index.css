@@ -68,11 +68,12 @@ header {
 }
 
 .progress-bar-container{
-    
-    margin: 15px;
+    margin-bottom: 15px;
 }
 
-
+.progress-bar{
+    width: -webkit-fill-available;
+}
 
 progress {
     border: none;
