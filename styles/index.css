@@ -3,6 +3,22 @@ body {
     color: #D6221D;
 }
 
+header {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    background-color: black;
+    border: 0ch;
+    text-shadow:   -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+     1px 1px 0 #ffffff,
+     1px 1px 10px #ffffff;color:#DE3535;
+    font-size:xx-large;
+}
+
 .yes-button {
     background-color: green;
 }
