@@ -1,5 +1,6 @@
 body {
-    background: black;
+    background: #1e1e1e;
+    color: #D6221D;
 }
 
 header {
@@ -16,6 +17,11 @@ input {
      1px 1px 0 #ffffff,
      1px 1px 10px #ffffff;color:#DE3535;
     font-size:xx-large;
+}
+
+.button {
+    font-size: xx-large;
+    color: white;
 }
 
 .yes-button {
