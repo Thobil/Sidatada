@@ -30,6 +30,7 @@ header {
 .button {
     font-size: xx-large;
     color: white;
+    cursor: pointer; /* Comme Tobias */
 }
 
 .yes-button {
