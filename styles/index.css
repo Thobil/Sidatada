@@ -5,19 +5,26 @@ body {
 
 header {
     text-align: center;
+    
 }
 
 .eg {
     text-align: center;
-    background-color: black;
+    background-color: #1e1e1e;
     border: 0ch;
     text-shadow:   -1px -1px 0 #ffffff,  
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+     -1px 1px 0 #ffffff,
      1px 1px 0 #ffffff,
-     1px 1px 10px #ffffff;color:#DE3535;
+     1px 1px 10px #ffffff;
+    color:#DE3535;
     font-size:xx-large;
     outline: none;
+}
+
+.head-picture {
+    max-width: 10vh;
+    max-height: 10vh;
 }
 
 .button {
@@ -35,4 +42,13 @@ header {
 
 .fit-picture{
     max-height: 50vh;
+}
+
+.main-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.title{
+    font-size: xx-large;
 }
