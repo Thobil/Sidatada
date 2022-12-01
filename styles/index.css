@@ -30,6 +30,7 @@ header {
 .button {
     font-size: xx-large;
     color: white;
+    cursor: crosshair;
 }
 
 .yes-button {
