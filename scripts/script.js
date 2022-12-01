@@ -1,6 +1,6 @@
 
 window.score = 0;
-window.nbImage = 1;
+window.nbImage = 6;
 
 window.onload = (event) => {
     //code here
