@@ -36,3 +36,8 @@ header {
 .fit-picture{
     max-height: 50vh;
 }
+
+.main-container {
+    flex-direction: column;
+    text-align: center;
+}
