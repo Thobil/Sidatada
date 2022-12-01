@@ -1,5 +1,6 @@
 
 window.score = 0;
+window.nbImage = 1;
 
 window.onload = (event) => {
     //code here
@@ -21,6 +22,8 @@ window.onload = (event) => {
     }
     function nextImage(){
         let image = document.getElementById("fit-picture");
-        image.src = parseInt(image.src)++;
+        nb =  parseInt(image.src)++;
+        if(nb > window.nbImage) nb = 1
+        image.src = nb;
     }
 }
