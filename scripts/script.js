@@ -1,6 +1,6 @@
 
 window.score = 0;
-window.nbImage = 1;
+window.nbImage = 6;
 
 window.onload = (event) => {
     //code here
@@ -17,6 +17,7 @@ function init(){
 
 }
 function sida(response) {
+    console.log(response)
     var random_boolean = Math.random() < 0.5;
     if(sida == random_boolean)
         window.score++;
@@ -24,7 +25,7 @@ function sida(response) {
 }
 function nextImage(){
     let image = document.getElementById("fit-picture");
-    nb =  parseInt(image.src)++;
+    nb =  parseInt(image.src);
     if(nb > window.nbImage) nb = 1
     image.src = nb;
 }
