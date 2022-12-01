@@ -24,8 +24,10 @@ function init(){
 function sida(response) {
     console.log(response)
     var random_boolean = Math.random() < 0.5;
-    if(sida == random_boolean)
-        window.score++;
+    if(response == random_boolean){
+        window.score+=1;
+        document.getElementById("score").innerText = window.score;
+    }
     nextImage();
 }
  function nextImage(){
@@ -43,6 +45,7 @@ function sida(response) {
     image.src = name;
 }
 
+<<<<<<< HEAD
 function UrlExists(url)
 {
     var http = new XMLHttpRequest();
@@ -50,3 +53,11 @@ function UrlExists(url)
     http.send();
     return http.status!=404;
 }
+=======
+function eg(){
+  if(document.getElementById("eg").value.toLowerCase() == "sida"){
+    window.location.href = "eg.html"
+  }
+}
+
+>>>>>>> 08f6577f11508eea86c1f246d7f60ee9fd62c390
