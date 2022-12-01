@@ -17,6 +17,7 @@ function init(){
 
 }
 function sida(response) {
+    console.log(response)
     var random_boolean = Math.random() < 0.5;
     if(sida == random_boolean)
         window.score++;
