@@ -1,6 +1,7 @@
 body {
     background: #1e1e1e;
-    color: #D6221D;
+    color: white;
+    font-family: monospace;
 }
 
 header {
@@ -8,17 +9,16 @@ header {
 }
 
 .eg {
+    font-family: monospace;
+    font-size: xx-large;
     text-align: center;
+    
     background-color: #1e1e1e;
     border: 0ch;
-    text-shadow:   -1px -1px 0 #ffffff,  
-     1px -1px 0 #ffffff,
-     -1px 1px 0 #ffffff,
-     1px 1px 0 #ffffff,
-     1px 1px 10px #ffffff;
-    color:#DE3535;
-    font-size:xx-large;
+    font-size: -webkit-xxx-large;
     outline: none;
+    
+    color: white
 }
 
 .head-picture {
