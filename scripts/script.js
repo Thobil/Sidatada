@@ -31,7 +31,7 @@ function nextImage(){
 
     num++;
 
-    if(num > window.nbImage) nb = 0
+    if(num > window.nbImage) num = 1
     let name = data[0]+"_"+num+"."+extension;
     console.log(name);
     image.src = name;
@@ -41,4 +41,10 @@ function eg(){
   if(document.getElementById("eg").value.toLowerCase() == "sida"){
     window.location.href = "eg.html"
   }
+function UrlExists(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
 }
