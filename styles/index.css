@@ -17,3 +17,11 @@ input {
      1px 1px 10px #ffffff;color:#DE3535;
     font-size:xx-large;
 }
+
+.yes-button {
+    background-color: green;
+}
+
+.no-button {
+    background-color: red;
+}
