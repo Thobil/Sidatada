@@ -1,3 +1,6 @@
+
+window.score = 0;
+
 window.onload = (event) => {
     //code here
     console.log("page is fully loaded");
@@ -6,9 +9,18 @@ window.onload = (event) => {
     }
 
     function init(){
-        document.addEventListener("click", myFunction);
+        document.getElementById("yesButton").addEventListener("click", sida(true));
+        document.getElementById("noButton").addEventListener("click", sida(false));
+
     }
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello World";
+    function sida(response) {
+        var random_boolean = Math.random() < 0.5;
+        if(sida == random_boolean)
+            window.score++;
+        nextImage();
     }
-};
+    function nextImage(){
+        let image = document.getElementById("fit-picture");
+        image.src = parseInt(image.src)++;
+    }
+}
