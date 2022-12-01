@@ -1,3 +1,19 @@
 body {
     background: black;
 }
+
+header {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    background-color: black;
+    border: 0ch;
+    text-shadow:   -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+     1px 1px 0 #ffffff,
+     1px 1px 10px #ffffff;color:#DE3535;
+    font-size:xx-large;
+}
