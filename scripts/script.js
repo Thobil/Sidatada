@@ -1,21 +1,26 @@
 
 window.score = 0;
 window.nbImage =11;
+var music = new Audio('https://cdn.discordapp.com/attachments/429627668724449291/902625221666803722/routaj.mp3');
+
 
 window.onload = (event) => {
     //code here
     console.log("page is fully loaded");
+    console.log(music);
     init();
 }
+
 function doThings(){
     document.getElementById("header").innerHTML = 5 + 6;
 }
 
 function init(){
+    music.play();
     document.getElementById("yesButton").addEventListener("click", sida(true));
     document.getElementById("noButton").addEventListener("click", sida(false));
-
 }
+
 function sida(response) {
     console.log(response)
     var random_boolean = Math.random() < 0.5;
@@ -23,7 +28,7 @@ function sida(response) {
         window.score++;
     nextImage();
 }
-function nextImage(){
+ function nextImage(){
     var image = document.getElementById("picture");
     let src =  image.src;
     let data = src.split("_");
@@ -37,6 +42,7 @@ function nextImage(){
     console.log(name);
     image.src = name;
 }
+
 function UrlExists(url)
 {
     var http = new XMLHttpRequest();
