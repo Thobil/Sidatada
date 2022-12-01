@@ -14,6 +14,7 @@ function doThings(){
 function init(){
     document.getElementById("yesButton").addEventListener("click", sida(true));
     document.getElementById("noButton").addEventListener("click", sida(false));
+    document.getElementById("noButton").addEventListener("click", eg);
 
 }
 function sida(response) {
@@ -28,4 +29,9 @@ function nextImage(){
     nb =  parseInt(image.src);
     if(nb > window.nbImage) nb = 1
     image.src = nb;
+}
+
+function eg(){
+  let a = document.getElementById("post_title").value;
+  if(a = "sida")
 }
