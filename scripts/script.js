@@ -1,6 +1,6 @@
 
 window.score = 0;
-window.nbImage = 6;
+window.nbImage =11;
 
 window.onload = (event) => {
     //code here
@@ -24,8 +24,16 @@ function sida(response) {
     nextImage();
 }
 function nextImage(){
-    let image = document.getElementById("fit-picture");
-    nb =  parseInt(image.src);
-    if(nb > window.nbImage) nb = 1
-    image.src = nb;
+    var image = document.getElementById("picture");
+    let src =  image.src;
+    let data = src.split("_");
+    let extension = data[1].split(".")[1];
+    let num = data[1].split(".")[0];
+
+    num++;
+
+    if(num > window.nbImage) nb = 0
+    let name = data[0]+"_"+num+"."+extension;
+    console.log(name);
+    image.src = name;
 }
