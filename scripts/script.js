@@ -30,7 +30,6 @@ function sida(response) {
 }
  function nextImage(){
     if (playMusic < 3){
-        console.log("TOOOO");
         music.play();
         playMusic += 1;
     }
