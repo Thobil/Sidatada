@@ -25,3 +25,7 @@ input {
 .no-button {
     background-color: red;
 }
+
+.fit-picture{
+    max-height: 50vh;
+}
