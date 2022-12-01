@@ -32,7 +32,7 @@ function nextImage(){
 
     num++;
 
-    if(num > window.nbImage) nb = 0
+    if(num > window.nbImage) num = 0
     let name = data[0]+"_"+num+"."+extension;
     console.log(name);
     image.src = name;
