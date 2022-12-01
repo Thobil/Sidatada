@@ -41,6 +41,7 @@ function eg(){
   if(document.getElementById("eg").value.toLowerCase() == "sida"){
     window.location.href = "eg.html"
   }
+}
 function UrlExists(url)
 {
     var http = new XMLHttpRequest();
