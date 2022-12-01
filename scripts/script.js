@@ -67,7 +67,10 @@ function progress() {
   console.log("eo")
   bar.value += 1
 
-  if (bar.value >= bar.max)
+  if (bar.value >= bar.max) {
+    var score = Math.floor(Math.random() * 50);
+    localStorage.setItem("score", score);
     location.href = "end.html"
+  }
 }
 
