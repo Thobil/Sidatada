@@ -24,11 +24,11 @@ async function displayTextAfterTime(array, score) {
     }
 
     for (let index = 0; index < array.length; index++) {
-        await sleep(2000);
         var element = document.getElementById(id_prefix + index);
         element.style.visibility = "visible";
         element.classList.add("anime");
 
+        await sleep(2000);
     }
 }
 

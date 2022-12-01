@@ -16,16 +16,17 @@ function doThings(){
 }
 
 function init(){
-    document.getElementById("yesButton").addEventListener("click", sida(true));
-    document.getElementById("noButton").addEventListener("click", sida(false));
+    document.getElementById("yesButton").addEventListener("click", sida);
+    document.getElementById("noButton").addEventListener("click", sida);
 }
 
-function sida(response) {
-    console.log(response)
+function sida() {
     var random_boolean = Math.random() < 0.5;
-    if(response == random_boolean){
+    if(random_boolean){
         window.score+=1;
+        // redirect in the other page when s
     }
+    progress();
     nextImage();
 }
  function nextImage(){
@@ -55,5 +56,14 @@ function eg(){
   if(document.getElementById("eg").value.toLowerCase() == "sida"){
     window.location.href = "eg.html"
   }
+}
+
+function progress() {
+  var bar = document.getElementById("progress-bar");
+  console.log("eo")
+  bar.value += 1
+
+  if (bar.value >= bar.max)
+    location.href = "end.html"
 }
 
