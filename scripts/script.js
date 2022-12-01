@@ -14,13 +14,14 @@ function doThings(){
 function init(){
     document.getElementById("yesButton").addEventListener("click", sida(true));
     document.getElementById("noButton").addEventListener("click", sida(false));
-
 }
 function sida(response) {
     console.log(response)
     var random_boolean = Math.random() < 0.5;
-    if(sida == random_boolean)
-        window.score++;
+    if(response == random_boolean){
+        window.score+=1;
+        document.getElementById("score").innerText = window.score;
+    }
     nextImage();
 }
 function nextImage(){
@@ -36,11 +37,4 @@ function nextImage(){
     let name = data[0]+"_"+num+"."+extension;
     console.log(name);
     image.src = name;
-}
-function UrlExists(url)
-{
-    var http = new XMLHttpRequest();
-    http.open('HEAD', url, false);
-    http.send();
-    return http.status!=404;
 }
