@@ -14,8 +14,6 @@ function doThings(){
 function init(){
     document.getElementById("yesButton").addEventListener("click", sida(true));
     document.getElementById("noButton").addEventListener("click", sida(false));
-    document.getElementById("noButton").addEventListener("click", eg);
-
 }
 function sida(response) {
     console.log(response)
@@ -38,9 +36,9 @@ function nextImage(){
     console.log(name);
     image.src = name;
 }
+
 function eg(){
-  let a = document.getElementById("post_title").value;
-  if(a = "sida"){
+  if(document.getElementById("eg").value.toLowerCase() == "sida"){
     window.location.href = "eg.html"
   }
 }
