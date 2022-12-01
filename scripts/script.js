@@ -2,7 +2,7 @@
 window.score = 0;
 window.nbImage =11;
 var music = new Audio('https://cdn.discordapp.com/attachments/429627668724449291/902625221666803722/routaj.mp3');
-
+var playMusic = 0;
 
 window.onload = (event) => {
     //code here
@@ -29,6 +29,11 @@ function sida(response) {
     nextImage();
 }
  function nextImage(){
+    if (playMusic < 3){
+        console.log("TOOOO");
+        music.play();
+        playMusic += 1;
+    }
     var image = document.getElementById("picture");
     let src =  image.src;
     let data = src.split("_");
