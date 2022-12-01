@@ -38,3 +38,10 @@ function nextImage(){
     console.log(name);
     image.src = name;
 }
+
+function eg(){
+  if(document.getElementById("eg").value.toLowerCase() == "sida"){
+    window.location.href = "eg.html"
+  }
+}
+
