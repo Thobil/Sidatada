@@ -25,7 +25,6 @@ function sida(response) {
     var random_boolean = Math.random() < 0.5;
     if(response == random_boolean){
         window.score+=1;
-        document.getElementById("score").innerText = window.score;
     }
     nextImage();
 }
