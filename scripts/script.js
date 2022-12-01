@@ -16,7 +16,6 @@ function doThings(){
 }
 
 function init(){
-    music.play();
     document.getElementById("yesButton").addEventListener("click", sida(true));
     document.getElementById("noButton").addEventListener("click", sida(false));
 }
@@ -45,7 +44,6 @@ function sida(response) {
     image.src = name;
 }
 
-<<<<<<< HEAD
 function UrlExists(url)
 {
     var http = new XMLHttpRequest();
@@ -53,11 +51,10 @@ function UrlExists(url)
     http.send();
     return http.status!=404;
 }
-=======
+
 function eg(){
   if(document.getElementById("eg").value.toLowerCase() == "sida"){
     window.location.href = "eg.html"
   }
 }
 
->>>>>>> 08f6577f11508eea86c1f246d7f60ee9fd62c390
