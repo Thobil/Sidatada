@@ -6,3 +6,4 @@ window.onload = (event) => {
   function doThings(){
     document.getElementById("header").innerHTML = 5 + 6;
 }
+
