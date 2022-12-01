@@ -41,3 +41,7 @@ header {
     flex-direction: column;
     text-align: center;
 }
+
+.title{
+    font-size: xx-large;
+}
