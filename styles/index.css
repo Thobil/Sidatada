@@ -19,12 +19,15 @@ input {
     font-size:xx-large;
 }
 
+.button {
+    font-size: xx-large;
+    color: white;
+}
+
 .yes-button {
     background-color: green;
-    color: white;
 }
 
 .no-button {
     background-color: red;
-    color: white;
 }
