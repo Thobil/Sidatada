@@ -21,8 +21,10 @@ input {
 
 .yes-button {
     background-color: green;
+    color: white;
 }
 
 .no-button {
     background-color: red;
+    color: white;
 }
