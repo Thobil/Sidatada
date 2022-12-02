@@ -7,5 +7,4 @@ Cet easter egg se décompose en 2 étapes très simples:
 Ces actions vont vous rediriger vers le site d'easter egg.
 
 Lien du site:
-[Lien du site
-](https://benoitgaudet38.github.io/Sidatada/)
+[https://benoitgaudet38.github.io/Sidatada/](https://benoitgaudet38.github.io/Sidatada/)
