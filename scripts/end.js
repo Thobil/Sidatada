@@ -1,4 +1,4 @@
-var music = new Audio('source/leSidaCPasBien.mp3');
+var music = new Audio('https://cdn.discordapp.com/attachments/913484336454586368/1048014537233813584/leSidaCPasBien.mp3');
 window.onload = (event) => {
     //code here
     console.log("page is fully loaded");
