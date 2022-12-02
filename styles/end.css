@@ -37,3 +37,7 @@ span {
     margin: 1em;
     color: white;
 }
+
+.red{
+    color: rgb(216, 0, 0);
+}
